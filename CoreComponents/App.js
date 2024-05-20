@@ -1,4 +1,4 @@
-import { View, Text, Image, ImageBackground } from 'react-native';
+import { View, Text, Image, ImageBackground, ScrollView } from 'react-native';
 import myImg from './assets/adaptive-icon.png';
 
 const App = () => {
@@ -20,6 +20,86 @@ const App = () => {
           alt="testImg"
           style={{ width: 300, height: 300 }}
         /> */}
+        <ScrollView>
+          <Text>
+            kjad asnkdnkasdm dna kjandknaksnd kansdknkasnd nakdsnkas\
+            alsjdjaslklksa as;djlkaslsadlasdlasdkasdknaskdnkansdk
+            anskdjnajsdakjds ajsndjajks askdjasdkjnjsd kasdjkasj kasjdkad
+            askndkansd kasndknask asndkandknas askdhasj asldjkasjdkjasd
+            aksdjkasdkjasd kadjkadkjd aanskdnksadkjd askdkasdjnas askndkasj
+            kwjiqhih qwihiqwh d kqjndiuhd kjndhd kjad asnkdnkasdm dna
+            kjandknaksnd kansdknkasnd nakdsnkas\ alsjdjaslklksa
+            as;djlkaslsadlasdlasdkasdknaskdnkansdk anskdjnajsdakjds ajsndjajks
+            askdjasdkjnjsd kasdjkasj kasjdkad askndkansd kasndknask asndkandknas
+            askdhasj asldjkasjdkjasd aksdjkasdkjasd kadjkadkjd aanskdnksadkjd
+            askdkasdjnas askndkasj kwjiqhih qwihiqwh d kqjndiuhd kjndhd{' '}
+          </Text>
+          <Text>
+            kjad asnkdnkasdm dna kjandknaksnd kansdknkasnd nakdsnkas\
+            alsjdjaslklksa as;djlkaslsadlasdlasdkasdknaskdnkansdk
+            anskdjnajsdakjds ajsndjajks askdjasdkjnjsd kasdjkasj kasjdkad
+            askndkansd kasndknask asndkandknas askdhasj asldjkasjdkjasd
+            aksdjkasdkjasd kadjkadkjd aanskdnksadkjd askdkasdjnas askndkasj
+            kwjiqhih qwihiqwh d kqjndiuhd kjndhd kjad asnkdnkasdm dna
+            kjandknaksnd kansdknkasnd nakdsnkas\ alsjdjaslklksa
+            as;djlkaslsadlasdlasdkasdknaskdnkansdk anskdjnajsdakjds ajsndjajks
+            askdjasdkjnjsd kasdjkasj kasjdkad askndkansd kasndknask asndkandknas
+            askdhasj asldjkasjdkjasd aksdjkasdkjasd kadjkadkjd aanskdnksadkjd
+            askdkasdjnas askndkasj kwjiqhih qwihiqwh d kqjndiuhd kjndhd{' '}
+          </Text>
+          <Text>
+            kjad asnkdnkasdm dna kjandknaksnd kansdknkasnd nakdsnkas\
+            alsjdjaslklksa as;djlkaslsadlasdlasdkasdknaskdnkansdk
+            anskdjnajsdakjds ajsndjajks askdjasdkjnjsd kasdjkasj kasjdkad
+            askndkansd kasndknask asndkandknas askdhasj asldjkasjdkjasd
+            aksdjkasdkjasd kadjkadkjd aanskdnksadkjd askdkasdjnas askndkasj
+            kwjiqhih qwihiqwh d kqjndiuhd kjndhd kjad asnkdnkasdm dna
+            kjandknaksnd kansdknkasnd nakdsnkas\ alsjdjaslklksa
+            as;djlkaslsadlasdlasdkasdknaskdnkansdk anskdjnajsdakjds ajsndjajks
+            askdjasdkjnjsd kasdjkasj kasjdkad askndkansd kasndknask asndkandknas
+            askdhasj asldjkasjdkjasd aksdjkasdkjasd kadjkadkjd aanskdnksadkjd
+            askdkasdjnas askndkasj kwjiqhih qwihiqwh d kqjndiuhd kjndhd{' '}
+          </Text>
+          <Text>
+            kjad asnkdnkasdm dna kjandknaksnd kansdknkasnd nakdsnkas\
+            alsjdjaslklksa as;djlkaslsadlasdlasdkasdknaskdnkansdk
+            anskdjnajsdakjds ajsndjajks askdjasdkjnjsd kasdjkasj kasjdkad
+            askndkansd kasndknask asndkandknas askdhasj asldjkasjdkjasd
+            aksdjkasdkjasd kadjkadkjd aanskdnksadkjd askdkasdjnas askndkasj
+            kwjiqhih qwihiqwh d kqjndiuhd kjndhd kjad asnkdnkasdm dna
+            kjandknaksnd kansdknkasnd nakdsnkas\ alsjdjaslklksa
+            as;djlkaslsadlasdlasdkasdknaskdnkansdk anskdjnajsdakjds ajsndjajks
+            askdjasdkjnjsd kasdjkasj kasjdkad askndkansd kasndknask asndkandknas
+            askdhasj asldjkasjdkjasd aksdjkasdkjasd kadjkadkjd aanskdnksadkjd
+            askdkasdjnas askndkasj kwjiqhih qwihiqwh d kqjndiuhd kjndhd{' '}
+          </Text>
+          <Text>
+            kjad asnkdnkasdm dna kjandknaksnd kansdknkasnd nakdsnkas\
+            alsjdjaslklksa as;djlkaslsadlasdlasdkasdknaskdnkansdk
+            anskdjnajsdakjds ajsndjajks askdjasdkjnjsd kasdjkasj kasjdkad
+            askndkansd kasndknask asndkandknas askdhasj asldjkasjdkjasd
+            aksdjkasdkjasd kadjkadkjd aanskdnksadkjd askdkasdjnas askndkasj
+            kwjiqhih qwihiqwh d kqjndiuhd kjndhd kjad asnkdnkasdm dna
+            kjandknaksnd kansdknkasnd nakdsnkas\ alsjdjaslklksa
+            as;djlkaslsadlasdlasdkasdknaskdnkansdk anskdjnajsdakjds ajsndjajks
+            askdjasdkjnjsd kasdjkasj kasjdkad askndkansd kasndknask asndkandknas
+            askdhasj asldjkasjdkjasd aksdjkasdkjasd kadjkadkjd aanskdnksadkjd
+            askdkasdjnas askndkasj kwjiqhih qwihiqwh d kqjndiuhd kjndhd{' '}
+          </Text>
+          <Text>
+            kjad asnkdnkasdm dna kjandknaksnd kansdknkasnd nakdsnkas\
+            alsjdjaslklksa as;djlkaslsadlasdlasdkasdknaskdnkansdk
+            anskdjnajsdakjds ajsndjajks askdjasdkjnjsd kasdjkasj kasjdkad
+            askndkansd kasndknask asndkandknas askdhasj asldjkasjdkjasd
+            aksdjkasdkjasd kadjkadkjd aanskdnksadkjd askdkasdjnas askndkasj
+            kwjiqhih qwihiqwh d kqjndiuhd kjndhd kjad asnkdnkasdm dna
+            kjandknaksnd kansdknkasnd nakdsnkas\ alsjdjaslklksa
+            as;djlkaslsadlasdlasdkasdknaskdnkansdk anskdjnajsdakjds ajsndjajks
+            askdjasdkjnjsd kasdjkasj kasjdkad askndkansd kasndknask asndkandknas
+            askdhasj asldjkasjdkjasd aksdjkasdkjasd kadjkadkjd aanskdnksadkjd
+            askdkasdjnas askndkasj kwjiqhih qwihiqwh d kqjndiuhd kjndhd{' '}
+          </Text>
+        </ScrollView>
       </ImageBackground>
     </View>
   );
