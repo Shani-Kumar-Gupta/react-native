@@ -1,4 +1,11 @@
-import { View, Text, Image, ImageBackground, ScrollView } from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  ImageBackground,
+  ScrollView,
+  Button,
+} from 'react-native';
 import myImg from './assets/adaptive-icon.png';
 
 const App = () => {
@@ -99,6 +106,11 @@ const App = () => {
             askdhasj asldjkasjdkjasd aksdjkasdkjasd kadjkadkjd aanskdnksadkjd
             askdkasdjnas askndkasj kwjiqhih qwihiqwh d kqjndiuhd kjndhd{' '}
           </Text>
+          <Button
+            title="Press"
+            onPress={() => console.log('Button Pressed')}
+            color="midnightblue"
+          />
         </ScrollView>
       </ImageBackground>
     </View>
