@@ -5,6 +5,7 @@ import {
   ImageBackground,
   ScrollView,
   Button,
+  Pressable,
 } from 'react-native';
 import myImg from './assets/adaptive-icon.png';
 
@@ -14,9 +15,16 @@ const App = () => {
       {/* <View style={{ backgroundColor: 'lightblue', height: 200, width: 200 }}></View>
       <View style={{ backgroundColor: 'lightgreen', height: 200, width: 200 }}></View> */}
       <ImageBackground source={myImg} style={{ flex: 1 }}>
-        <Text style={{ fontSize: 50, fontWeight: 'bold', color: 'blue' }}>
-          <Text style={{ color: 'white' }}>Hello, </Text>React Native!
-        </Text>
+        <Pressable
+          onPress={() => console.log('Text Pressed')}
+          onPressIn={() => console.log('Text Pressed In')}
+          onPressOut={() => console.log('Text Pressed Out')}
+          onLongPress={() => console.log("Text Long Pressed")}
+        >
+          <Text style={{ fontSize: 50, fontWeight: 'bold', color: 'blue' }}>
+            <Text style={{ color: 'white' }}>Hello, </Text>React Native!
+          </Text>
+        </Pressable>
         {/* <Image
           source={myImg}
           alt="testImg"
