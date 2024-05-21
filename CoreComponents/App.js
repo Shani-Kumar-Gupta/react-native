@@ -7,14 +7,18 @@ import {
   Button,
   Pressable,
   Modal,
+  StatusBar
 } from 'react-native';
 import { useState } from 'react';
 import myImg from './assets/adaptive-icon.png';
 
 const App = () => {
   const [isModalActive, setIsModalActive] = useState(false);
+  const [isStatusBarActive, setIsStatusBarActive] = useState(true);
   return (
     <View style={{ flex: 1, backgroundColor: 'tomato', padding: 50 }}>
+      <StatusBar backgroundColor='darkblue' barStyle='light-content' hidden={isStatusBarActive} />
+      <Button title='Toggle Status Bar' onPress={() => setIsStatusBarActive((o) => !o)} />
       {/* <View style={{ backgroundColor: 'lightblue', height: 200, width: 200 }}></View>
       <View style={{ backgroundColor: 'lightgreen', height: 200, width: 200 }}></View> */}
       <ImageBackground source={myImg} style={{ flex: 1 }}>
