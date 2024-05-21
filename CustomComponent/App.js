@@ -9,10 +9,10 @@ export default function App() {
       <StatusBar style="auto" />
       <Greet name="Shani Kumar Gupta" myStyle={styles.title} />
       <Greet name="Aman Kumar" myStyle={styles.title} />
-      <View style={[styles.box, styles.lightBlueBox]}>
+      <View style={[styles.box, styles.lightBlueBox, styles.boxShadow]}>
         <Text>Lightblue Box</Text>
       </View>
-      <View style={[styles.box, styles.lightGreenBox]}>
+      <View style={[styles.box, styles.lightGreenBox, styles.boxShadow, styles.andriodShadow]}>
         <Text>Lightgreen Box</Text>
       </View>
     </View>
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   box: {
-    width: 100,
-    height: 100,
+    width: 250,
+    height: 250,
     paddingVertical: 10,
     paddingHorizontal: 20,
     marginVertical: 10,
@@ -47,5 +47,17 @@ const styles = StyleSheet.create({
   },
   lightGreenBox: {
     backgroundColor: 'lightgreen',
+  },
+  boxShadow: {
+    shadowColor: '#333333',
+    shadowOffset: {
+      width: 6,
+      height: 6
+    },
+    shadowOpacity: 0.6,
+    shadowRadius: 4
+  },
+  andriodShadow: {
+    elevation: 10
   }
 });
