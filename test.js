@@ -1,0 +1,1 @@
+console.log("Shani/ \Kumar / \ Gupta / Test.pdf".replaceAll('/', '').replaceAll('\\', ''));
