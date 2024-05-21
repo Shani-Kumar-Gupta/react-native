@@ -7,8 +7,8 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
-      <Greet name="Shani Kumar Gupta" />
-      <Greet name="Aman Kumar" />
+      <Greet name="Shani Kumar Gupta" myStyle={styles.title} />
+      <Greet name="Aman Kumar" myStyle={styles.title} />
     </View>
   );
 }
@@ -20,4 +20,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  title: {
+    fontSize: 24,
+    color: 'lightgrey',
+    fontWeight: 'bold',
+  }
 });

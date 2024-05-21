@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const Greet = ({ name }) => {
+const Greet = ({ name, myStyle }) => {
   return (
     <View>
-      <Text>Hello, {name}</Text>
+      <Text style={myStyle}>Hello, {name}</Text>
     </View>
   );
 };
