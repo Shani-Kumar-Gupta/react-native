@@ -34,7 +34,13 @@ const styles = StyleSheet.create({
   box: {
     width: 100,
     height: 100,
-    padding: 10
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    marginVertical: 10,
+    borderWidth: 2,
+    borderColor: 'black',
+    borderStyle: 'solid',
+    borderRadius: 5
   },
   lightBlueBox: {
     backgroundColor: 'lightblue',
