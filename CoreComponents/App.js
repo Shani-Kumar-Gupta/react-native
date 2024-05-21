@@ -7,7 +7,8 @@ import {
   Button,
   Pressable,
   Modal,
-  StatusBar
+  StatusBar,
+  ActivityIndicator
 } from 'react-native';
 import { useState } from 'react';
 import myImg from './assets/adaptive-icon.png';
@@ -15,10 +16,16 @@ import myImg from './assets/adaptive-icon.png';
 const App = () => {
   const [isModalActive, setIsModalActive] = useState(false);
   const [isStatusBarActive, setIsStatusBarActive] = useState(true);
+  const [isActivityIndicatorActive, setIsActivityIndicatorActive] = useState(false);
   return (
     <View style={{ flex: 1, backgroundColor: 'tomato', padding: 50 }}>
       <StatusBar backgroundColor='darkblue' barStyle='light-content' hidden={isStatusBarActive} />
       <Button title='Toggle Status Bar' onPress={() => setIsStatusBarActive((o) => !o)} />
+      <ActivityIndicator />
+      <ActivityIndicator size="large" />
+      <ActivityIndicator size="large" color='midnightblue' />
+      <ActivityIndicator size="large" color='midnightblue' animating={isActivityIndicatorActive} />
+      <Button title='Activate Activity Indicator' onPress={() => setIsActivityIndicatorActive((o) => !o)} />
       {/* <View style={{ backgroundColor: 'lightblue', height: 200, width: 200 }}></View>
       <View style={{ backgroundColor: 'lightgreen', height: 200, width: 200 }}></View> */}
       <ImageBackground source={myImg} style={{ flex: 1 }}>
