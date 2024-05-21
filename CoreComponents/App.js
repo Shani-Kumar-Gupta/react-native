@@ -8,7 +8,8 @@ import {
   Pressable,
   Modal,
   StatusBar,
-  ActivityIndicator
+  ActivityIndicator,
+  Alert,
 } from 'react-native';
 import { useState } from 'react';
 import myImg from './assets/adaptive-icon.png';
@@ -16,16 +17,31 @@ import myImg from './assets/adaptive-icon.png';
 const App = () => {
   const [isModalActive, setIsModalActive] = useState(false);
   const [isStatusBarActive, setIsStatusBarActive] = useState(true);
-  const [isActivityIndicatorActive, setIsActivityIndicatorActive] = useState(false);
+  const [isActivityIndicatorActive, setIsActivityIndicatorActive] =
+    useState(false);
   return (
     <View style={{ flex: 1, backgroundColor: 'tomato', padding: 50 }}>
-      <StatusBar backgroundColor='darkblue' barStyle='light-content' hidden={isStatusBarActive} />
-      <Button title='Toggle Status Bar' onPress={() => setIsStatusBarActive((o) => !o)} />
+      <StatusBar
+        backgroundColor="darkblue"
+        barStyle="light-content"
+        hidden={isStatusBarActive}
+      />
+      <Button
+        title="Toggle Status Bar"
+        onPress={() => setIsStatusBarActive((o) => !o)}
+      />
       <ActivityIndicator />
       <ActivityIndicator size="large" />
-      <ActivityIndicator size="large" color='midnightblue' />
-      <ActivityIndicator size="large" color='midnightblue' animating={isActivityIndicatorActive} />
-      <Button title='Activate Activity Indicator' onPress={() => setIsActivityIndicatorActive((o) => !o)} />
+      <ActivityIndicator size="large" color="midnightblue" />
+      <ActivityIndicator
+        size="large"
+        color="midnightblue"
+        animating={isActivityIndicatorActive}
+      />
+      <Button
+        title="Activate Activity Indicator"
+        onPress={() => setIsActivityIndicatorActive((o) => !o)}
+      />
       {/* <View style={{ backgroundColor: 'lightblue', height: 200, width: 200 }}></View>
       <View style={{ backgroundColor: 'lightgreen', height: 200, width: 200 }}></View> */}
       <ImageBackground source={myImg} style={{ flex: 1 }}>
@@ -150,6 +166,28 @@ const App = () => {
           />
         </View>
       </Modal>
+      <Button title="Alert" onPress={() => Alert.alert('Invalid Data!')} />
+      <Button
+        title="Alert 2"
+        onPress={() =>
+          Alert.alert('Invalid Data!', 'Please reverify the data!')
+        }
+      />
+      <Button
+        title="Alert 3"
+        onPress={() =>
+          Alert.alert('Invalid Data!', 'Please reverify the data!', [
+            {
+              text: 'OK',
+              onPress: () => console.log('Ok Pressed!'),
+            },
+            {
+              text: 'Cancel',
+              onPress: () => console.log('Cancel Pressed!'),
+            },
+          ])
+        }
+      />
     </View>
   );
 };
