@@ -15,6 +15,7 @@ React Native Core Component:
 
 React Native Built In API's:
   - useWindowDimensions() - Handle the dynamic UI basis of different device dimentions
+  - Platform API - Platform Specific UI changes or additional functionality
 
 Platform Specific Code:
   - Platform module
