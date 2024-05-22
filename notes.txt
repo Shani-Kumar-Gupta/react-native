@@ -1,0 +1,21 @@
+React Native Core Component:
+  - View
+  - Text
+  - Image
+  - ImageBackground
+  - ScrollView
+  - Button
+  - Pressable
+  - ActivityIndicator
+  - Modal
+  - StatusBar
+  - Alert
+  - SafeAreaView - Used to solve the text hide issue within notch in IOS Devices
+  - FlatList - Only show the item visible to the current view port to enhance the performance (lazy loaded)
+
+React Native Built In API's:
+  - useWindowDimensions() - Handle the dynamic UI basis of different device dimentions
+
+Platform Specific Code:
+  - Platform module
+  - Platform specific flies
