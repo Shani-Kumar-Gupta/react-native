@@ -1,7 +1,26 @@
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Dimensions, useWindowDimensions } from 'react-native';
 import Box from './components/Box';
+import { useState, useEffect } from 'react';
 
 export default function App() {
+  // const [dimensions, setDimentions] = useState({
+  //   window: Dimensions
+  // });
+
+  // useEffect(() => {
+  //   const subscription = Dimensions.addEventListener('change', (window) => {
+  //     setDimentions({ window });
+  //   });
+
+  //   return subscription?.remove();
+  // });
+
+  // const { window } = dimensions;
+  // const windowWidth = window.width;
+  // const windowHeight = window.height;
+  const windowWidth = useWindowDimensions().width;
+  const windowHeight = useWindowDimensions().height;
+
   return (
     <View style={styles.container}>
       {/* <Box style={{ backgroundColor: '#8e9b00', flex: 1 }}>Box 1</Box>
