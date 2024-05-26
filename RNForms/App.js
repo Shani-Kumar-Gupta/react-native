@@ -12,13 +12,31 @@ export default function App() {
   const [text, setText] = useState('');
   return (
     <SafeAreaView style={styles.container}>
-      <TextInput
-        style={styles.inputText}
-        placeholder="Enter Text"
-        value={text}
-        onChangeText={setText}
-      />
-      <Text>{text}</Text>
+      <View style={styles.cardContainer}>
+        <TextInput
+          style={styles.inputText}
+          placeholder="Enter Text"
+          value={text}
+          onChangeText={setText}
+        />
+        <TextInput
+          style={styles.inputText}
+          placeholder="Enter Text"
+          value={text}
+          onChangeText={setText}
+          autoCorrect={false}
+          autoCapitalize='none'
+          secureTextEntry
+        />
+        <TextInput
+          style={styles.inputText}
+          placeholder="Enter Phone Number"
+          value={text}
+          onChangeText={setText}
+          keyboardType='numeric'
+        />
+        <Text>{text}</Text>
+      </View>
     </SafeAreaView>
   );
 }
@@ -28,6 +46,16 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f5f5f5',
     paddingTop: StatusBar.currentHeight,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  cardContainer: {
+    width: '90%',
+    backgroundColor: '#E5E5E5',
+    borderRadius: 10,
+    margin: 10,
+    padding: 10,
+    elevation: 5
   },
   inputText: {
     borderWidth: 1,
