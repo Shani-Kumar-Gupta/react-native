@@ -12,6 +12,11 @@ React Native Core Component:
   - Alert
   - SafeAreaView - Used to solve the text hide issue within notch in IOS Devices
   - FlatList - Only show the item visible to the current view port to enhance the performance (lazy loaded)
+  - SectionList
+
+  // Form Handling Native Elements
+  - TextInput
+  - Switch
 
 React Native Built In API's:
   - useWindowDimensions() - Handle the dynamic UI basis of different device dimentions
@@ -20,3 +25,9 @@ React Native Built In API's:
 Platform Specific Code:
   - Platform module
   - Platform specific flies
+
+Form Handling in React Native:
+  - Managing Form State
+  - Handling Form Validation
+  - Displaying Validation Message
+  - Submitting Form Data
