@@ -36,6 +36,15 @@ export default function App() {
           keyboardType='numeric'
         />
         <Text>{text}</Text>
+        <TextInput
+          style={[styles.inputText, styles.multiline]}
+          placeholder="Enter Text"
+          value={text}
+          onChangeText={setText}
+          autoCorrect={false}
+          autoCapitalize='none'
+          multiline
+        />
       </View>
     </SafeAreaView>
   );
@@ -63,4 +72,8 @@ const styles = StyleSheet.create({
     margin: 10,
     height: 40,
   },
+  multiline: {
+    minHeight: 100,
+    textAlignVertical: 'top'
+  }
 });
