@@ -7,8 +7,10 @@ import {
   StatusBar,
   Platform,
   FlatList,
+  SectionList,
 } from 'react-native';
 import pokemonList from './data.json';
+import groupPokemonList from './grouped-data.json';
 
 export default function App() {
   return (
@@ -27,7 +29,7 @@ export default function App() {
 
       {/* Approach 2 */}
       <View style={styles.scrollView}>
-        <FlatList
+        {/* <FlatList
           data={pokemonList}
           renderItem={({ item }) => {
             return (
@@ -57,6 +59,24 @@ export default function App() {
             justifyContent: 'center',
             alignItems: 'center',
           }}
+        /> */}
+
+        <SectionList
+          sections={groupPokemonList}
+          renderItem={({ item }) => {
+            return (
+              <View style={styles.pokenMonCard}>
+                <Text>{item}</Text>
+              </View>
+            );
+          }}
+          renderSectionHeader={({ section }) => {
+            return (
+              <Text>{section.type}</Text>
+            )
+          }}
+          ItemSeparatorComponent={() => <View style={{ height: 16 }} />} // Render a component after each item is rendered
+          SectionSeparatorComponent={() => <View style={{ height: 16 }} />}
         />
       </View>
     </SafeAreaView>
